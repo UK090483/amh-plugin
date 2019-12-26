@@ -2,7 +2,7 @@
 Contributors: 
 Tags: migration, backup, restore, move, migrate, duplicate, transfer, clone, automate, copy site
 Requires at least: 4.0
-Tested up to: 5.2
+Tested up to: 5.3.2
 Requires PHP: 5.2.17
 Stable tag: 1.3.22
 License: GPLv2
@@ -11,12 +11,11 @@ WordPress migration and backups are much easier with Duplicator! Clone, backup, 
 
 == Description ==
 
-
+bli bla blub
 
 == Changelog ==
 
-Please see the following url:
-[https://snapcreek.com/duplicator/docs/changelog?lite](https://snapcreek.com/duplicator/docs/changelog?lite&utm_source=duplicator_free&utm_medium=wp_org&utm_content=changelog_support&utm_campaign=duplicator_free)
+bliiiiiiiii
 
 
 
