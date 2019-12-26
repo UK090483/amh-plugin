@@ -46,7 +46,7 @@ require_once plugin_dir_path(__FILE__) . 'src/init.php';
 
 require plugin_dir_path(__FILE__) . 'plugin-update-checker-4.8.1/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://raw.githubusercontent.com/UK090483/amh-plugin/master/info.json',
+	'https://github.com/UK090483/amh-plugin/',
 	__FILE__, //Full path to the main plugin file or functions.php.
-	'unique-plugin-or-theme-slug'
+	'amh-plugin'
 );
