@@ -1,4 +1,4 @@
-=== Blka ===
+=== Alle Müssen Handeln Plugin ===
 Contributors: 
 Tags: migration, backup, restore, move, migrate, duplicate, transfer, clone, automate, copy site
 Requires at least: 4.0
@@ -11,7 +11,7 @@ WordPress migration and backups are much easier with Duplicator! Clone, backup, 
 
 == Description ==
 
-bli bla blub
+bli bla blub sdfjklsdkfjslkd
 
 == Changelog ==
 
