@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Alle müssen handeln Plugin
  * Plugin URI: https://alle-müssen-handeln.de/
- * Description: my-block — is a Gutenberg plugin created via create-guten-block.
+ * Description: 
  * Author: Konrad Ullrich
  * Author URI: https://alle-müssen-handeln.de/
  * Version: 1.0.0
@@ -42,3 +42,11 @@ add_filter('block_categories', 'amh_block_category_setup', 10, 2);
 
 
 require_once plugin_dir_path(__FILE__) . 'src/init.php';
+
+
+require plugin_dir_path(__FILE__) . 'plugin-update-checker-4.8.1/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://raw.githubusercontent.com/UK090483/amh-plugin/master/info.json',
+	__FILE__, //Full path to the main plugin file or functions.php.
+	'unique-plugin-or-theme-slug'
+);

@@ -11,11 +11,11 @@ export default function Inspector({
 	images,
 	setSelectedItem
 }) {
-	const item = images.find(element => element.id === selectedItem);
+	const item = images.find(element => element.fileName === selectedItem);
 
 	function setAlt(text) {
 		let i = [...images];
-		i.find(element => element.id === selectedItem).alt = text;
+		i.find(element => element.fileName === selectedItem).alt = text;
 		setAttributes({
 			images: i
 		});
@@ -36,13 +36,13 @@ export default function Inspector({
 		<div>
 			{isOpen && (
 				<Modal
-					title="This is my modal"
+					title="Image Settings"
 					onRequestClose={() => {
 						setOpen(false);
 					}}
 				>
-					<h1>FileName</h1>
-					<h3>{item.fileName}</h3>
+					<h3>FileName</h3>
+					<h5>{item.fileName}</h5>
 					<h3>{item.alt}</h3>
 					<TextControl
 						label="Alternative Sort name"

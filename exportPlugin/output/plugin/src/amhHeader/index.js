@@ -33,10 +33,10 @@ const { RichText } = wp.blockEditor;
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType("cgb/amh-header", {
+registerBlockType("amh/amh-header", {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: "AMH Header", // Block title.
-	icon: "shield", // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
+	icon: "editor-bold", // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	category: "alle-müssen-handeln", // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 
 	attributes: {

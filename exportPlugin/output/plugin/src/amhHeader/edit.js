@@ -84,7 +84,7 @@ export default function(props) {
 				attributes={attributes}
 				setAttributes={setAttributes}
 			></Inspector>
-			<div className={"amh-wrap "} style={getWrapStyle()}>
+			<div className={"amhHeader-wrap"} style={getWrapStyle()}>
 				<RichText
 					allowedFormats={["core/bold", "core/italic", "core/underline"]}
 					tagName="div"
