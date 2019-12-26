@@ -1,22 +1,5 @@
 {
-    "name": "amh-plugin",
     "version": "2.0",
-    "download_url": "http://example.com/updates/example-plugin.zip",
-    "homepage": "https://xn--alle-mssen-handeln-r6b.de/",
-    "requires": "4.5",
-    "tested": "4.8",
-    "last_updated": "2017-01-01 16:17:00",
-    "upgrade_notice": "Here's why you should upgrade...",
-    "author": "Konrad Ullrich",
-    "author_homepage": "https://xn--alle-mssen-handeln-r6b.de/",
-    "sections": {
-        "description": "(Required) Plugin description. Basic HTML can be used in all sections.",
-        "installation": "(Recommended) Installation instructions.",
-        "changelog": "(Recommended) Changelog. <p>This section will be displayed by default when the user clicks 'View version x.y.z details'.</p>",
-        "custom_section": "This is a custom section labeled 'Custom Section'."
-    },
-    "rating": 90,
-    "num_ratings": 123,
-    "downloaded": 1234,
-    "active_installs": 12345
+    "details_url": "http://example.com/version-2.0-details.html",
+    "download_url": "http://example.com/example-theme-2.0.zip"
 }
