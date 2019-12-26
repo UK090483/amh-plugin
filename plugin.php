@@ -6,7 +6,7 @@
  * Description: 
  * Author: Konrad Ullrich
  * Author URI: https://alle-müssen-handeln.de/
- * Version: 3.0.0
+ * Version: 1.0.0
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  *
@@ -50,3 +50,6 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	__FILE__, //Full path to the main plugin file or functions.php.
 	'amh-plugin'
 );
+
+
+$myUpdateChecker->getVcsApi()->enableReleaseAssets();
