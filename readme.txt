@@ -11,11 +11,12 @@ WordPress migration and backups are much easier with Duplicator! Clone, backup, 
 
 == Description ==
 
-bli bla blub cleeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeen
+
+Dieses Plugin ist für das Projekt Alle Müssen Handeln gebaut 
+Für mehr Informationen besuchen Sie bitte [Alle Müssen Handeln Homepage](https://xn--alle-mssen-handeln-r6b.de/anleitung/ "Alle Müssen Handeln Homepage")
 
 == Changelog ==
 
-bliiiiiiiii
 
 
 
