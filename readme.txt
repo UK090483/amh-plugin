@@ -11,7 +11,7 @@ WordPress migration and backups are much easier with Duplicator! Clone, backup, 
 
 == Description ==
 
-bli bla blub sdfjklsdkfjslkd
+bli bla blub clean
 
 == Changelog ==
 
