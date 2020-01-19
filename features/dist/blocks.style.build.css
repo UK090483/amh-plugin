@@ -1,0 +1,318 @@
+.hero-wrap {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.hero-image {
+  width: 100vw;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.863);
+  background-blend-mode: overlay;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-name: blendIn;
+          animation-name: blendIn;
+  -webkit-animation-timing-function: cubic-bezier(1, 0.19, 0.66, 1.28);
+          animation-timing-function: cubic-bezier(1, 0.19, 0.66, 1.28);
+  color: white; }
+  .hero-image * {
+    font-size: 2.5rem;
+    color: white; }
+
+.hero-image-video {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s; }
+
+.video-loaded {
+  opacity: 1; }
+
+.hero_innerblock {
+  opacity: 0;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: blendInnerText;
+          animation-name: blendInnerText;
+  -webkit-animation-timing-function: cubic-bezier(1, 0.19, 0.66, 1.28);
+          animation-timing-function: cubic-bezier(1, 0.19, 0.66, 1.28);
+  color: white; }
+
+@-webkit-keyframes blendIn {
+  form {
+    background-color: rgba(255, 255, 255, 0); }
+  to {
+    background-color: rgba(34, 34, 34, 0.432); } }
+
+@keyframes blendIn {
+  form {
+    background-color: rgba(255, 255, 255, 0); }
+  to {
+    background-color: rgba(34, 34, 34, 0.432); } }
+
+@-webkit-keyframes blendInnerText {
+  form {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes blendInnerText {
+  form {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.hero-paralax-wrap {
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+          transform: translate3d(0px, 0px, 0px); }
+.collapsed p {
+  line-height: 0;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease; }
+
+.expanded p {
+  line-height: inherit;
+  opacity: inherit;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease; }
+
+.read-more-trigger {
+  cursor: pointer;
+  border-style: solid none none none;
+  display: inline-block;
+  padding: 1em 4em 1em 4em;
+  color: inherit !important;
+  text-align: center;
+  border-color: #ccc;
+  border-width: thin;
+  font-family: lato, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: inherit;
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  outline: none; }
+  @media only screen and (max-width: 600px) {
+    .read-more-trigger {
+      font-size: 14px; } }
+  .read-more-trigger:focus {
+    background-color: inherit; }
+
+.read-more-trigger:hover {
+  background-color: gray;
+  color: white !important; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.ku_base_show_more_button {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+.amh-readmore-wrap {
+  margin-bottom: 20px; }
+  .amh-readmore-wrap .amh-readmore-item-head {
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.555); }
+  .amh-readmore-wrap .amh-readmore-items {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+    @media (max-width: 990px) {
+      .amh-readmore-wrap .amh-readmore-items {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+    .amh-readmore-wrap .amh-readmore-items .amh-readmore-item {
+      background-color: rgba(128, 128, 128, 0.295);
+      padding: 0 10px;
+      width: 100%;
+      min-height: 50px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .amh-readmore-wrap .amh-readmore-items .amh-readmore-item * {
+        pointer-events: none; }
+      @media (max-width: 990px) {
+        .amh-readmore-wrap .amh-readmore-items .amh-readmore-item {
+          border-right: none; } }
+      .amh-readmore-wrap .amh-readmore-items .amh-readmore-item .amh-readmore-item-text {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        width: calc(100% - 40px); }
+        .amh-readmore-wrap .amh-readmore-items .amh-readmore-item .amh-readmore-item-text h5 {
+          margin: 0; }
+        .amh-readmore-wrap .amh-readmore-items .amh-readmore-item .amh-readmore-item-text h5:nth-child(1) {
+          width: 100px;
+          text-align: center; }
+        .amh-readmore-wrap .amh-readmore-items .amh-readmore-item .amh-readmore-item-text h5:nth-child(2) {
+          width: 100%;
+          text-align: center; }
+        .amh-readmore-wrap .amh-readmore-items .amh-readmore-item .amh-readmore-item-text .amh-readmore-item-image {
+          width: 100px;
+          height: 48px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center; }
+      .amh-readmore-wrap .amh-readmore-items .amh-readmore-item .amh-readmore-item-arrow {
+        width: 40px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+        -ms-flex-align: center;
+            align-items: center;
+        -webkit-transition: -webkit-transform 0.25s;
+        transition: -webkit-transform 0.25s;
+        -o-transition: transform 0.25s;
+        transition: transform 0.25s;
+        transition: transform 0.25s, -webkit-transform 0.25s; }
+        .amh-readmore-wrap .amh-readmore-items .amh-readmore-item .amh-readmore-item-arrow svg {
+          border-radius: 50%;
+          border: black solid 1px;
+          height: 40px;
+          width: 40px; }
+      .amh-readmore-wrap .amh-readmore-items .amh-readmore-item.amh-readmore-item-active .amh-readmore-item-arrow {
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg); }
+        .amh-readmore-wrap .amh-readmore-items .amh-readmore-item.amh-readmore-item-active .amh-readmore-item-arrow svg {
+          background-color: #252525;
+          fill: white; }
+      .amh-readmore-wrap .amh-readmore-items .amh-readmore-item.amh-readmore-item-inactive {
+        opacity: 0.2;
+        background-color: rgba(99, 97, 97, 0.322); }
+
+.amh-readmore-items-subContent .amh-readmore-subContent {
+  padding: 0 10px;
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease; }
+  .amh-readmore-items-subContent .amh-readmore-subContent * {
+    font-size: 0;
+    line-height: 0px;
+    opacity: 0;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease; }
+  .amh-readmore-items-subContent .amh-readmore-subContent.amh-readmore-subContent-active {
+    border-bottom: black solid 1px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content; }
+    .amh-readmore-items-subContent .amh-readmore-subContent.amh-readmore-subContent-active * {
+      font-size: 1rem;
+      line-height: inherit;
+      opacity: inherit;
+      -webkit-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease;
+      transition: all 0.25s ease; }
+.amh-wrap-wrap {
+  margin-bottom: 10px;
+  border: green solid 3px;
+  border-radius: 10px;
+  padding: 1px; }
+  .amh-wrap-wrap .amh-wrap-head {
+    color: white;
+    background-color: gray;
+    border-radius: 6px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 10px; }
+    .amh-wrap-wrap .amh-wrap-head * {
+      pointer-events: none; }
+    .amh-wrap-wrap .amh-wrap-head .amh-readmore-item-arrow svg {
+      border-radius: 50%;
+      border-style: solid;
+      border-width: 1px;
+      border-color: inherit;
+      height: 40px;
+      width: 40px;
+      fill: inherit;
+      -webkit-transition: -webkit-transform 0.25s;
+      transition: -webkit-transform 0.25s;
+      -o-transition: transform 0.25s;
+      transition: transform 0.25s;
+      transition: transform 0.25s, -webkit-transform 0.25s; }
+  .amh-wrap-wrap .amh-wrap-innerBlocks-container {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  .amh-wrap-wrap .amh-wrap-innerBlocks {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  .amh-wrap-wrap.amh-wrap-wrap-active .amh-wrap-head {
+    border-radius: 6px 6px 0 0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out; }
+    .amh-wrap-wrap.amh-wrap-wrap-active .amh-wrap-head svg {
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg);
+      fill: inherit; }
+  .amh-wrap-wrap.amh-wrap-wrap-active .amh-wrap-innerBlocks {
+    opacity: 1;
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out; }
