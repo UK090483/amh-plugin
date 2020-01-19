@@ -61,7 +61,7 @@ const defaulSubBlocks = JSON.stringify([
 registerBlockType("amh/amh-read-more-block", {
 	title: __("Amh Read more"),
 	icon: iconEl,
-	category: "kubase-blocks",
+	category: "alle-müssen-handeln",
 	attributes: {
 		mainBlock: {
 			type: "string",

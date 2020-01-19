@@ -8,7 +8,7 @@ const { registerBlockType } = wp.blocks;
 registerBlockType("amh/amh-wrap", {
 	title: "Amh Wrap",
 	icon: "editor-insertmore",
-	category: "kubase-blocks",
+	category: "alle-müssen-handeln",
 	attributes: {
 		mainBlock: {
 			type: "string",
