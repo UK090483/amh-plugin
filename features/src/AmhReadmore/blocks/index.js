@@ -26,35 +26,40 @@ const defaulSubBlocks = JSON.stringify([
 		short: "ja",
 		color: "inherit",
 		content: "Grüne",
-		logo: null
+		logo: null,
+		ampel: null
 	},
 	{
 		label: "SPD",
 		short: "nein",
 		color: "inherit",
 		content: "SPD",
-		logo: null
+		logo: null,
+		ampel: null
 	},
 	{
 		label: "CDU",
 		short: "unklar",
 		color: "inherit",
 		content: "CDU",
-		logo: null
+		logo: null,
+		ampel: null
 	},
 	{
 		label: "FDP",
 		short: "ja",
 		color: "inherit",
 		content: "FDP",
-		logo: null
+		logo: null,
+		ampel: null
 	},
 	{
 		label: "Linke",
 		short: "ja",
 		color: "inherit",
 		content: "Linke",
-		logo: null
+		logo: null,
+		ampel: null
 	}
 ]);
 

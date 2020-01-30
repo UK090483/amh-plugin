@@ -42,6 +42,16 @@
  * Can include things like variables and mixins
  * that are used across the project.
 */
+.amh-readmore-ampel-wrap {
+  width: 600px;
+  height: 100px; }
+
+.amh-readmore-ampel-item {
+  width: 60px;
+  height: 60px; }
+
+.amh-readmore-ampel-item-active {
+  background-color: red; }
 /**
  * #.# Common SCSS
  *

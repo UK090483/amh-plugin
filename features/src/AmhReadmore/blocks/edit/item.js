@@ -2,7 +2,7 @@ const { TextControl, Button, ButtonGroup, ColorPicker } = wp.components;
 const { MediaUpload } = wp.editor;
 import ButtonGroupCustom from "../Inspector/ButtonGroup";
 const { RichText } = wp.blockEditor;
-
+import Ampel from "./ampel";
 export default function item(props) {
 	const {
 		attributes,
@@ -58,6 +58,7 @@ export default function item(props) {
 				>
 					Edit
 				</Button>
+
 				<TextControl
 					value={block.label}
 					onChange={value => {
@@ -126,6 +127,11 @@ export default function item(props) {
 							</Button>
 						)}
 					</div>
+
+					<Ampel
+						setSubContent={setSubContent}
+						ampel={encodedSubblocks[index].ampel}
+					></Ampel>
 					<TextControl
 						style={{ color: block.color }}
 						label="short"
@@ -134,6 +140,7 @@ export default function item(props) {
 							setSubContent(value, "short");
 						}}
 					></TextControl>
+
 					<ButtonGroupCustom
 						items={[
 							{ value: "inherit", label: "none" },

@@ -1,9 +1,13 @@
+$w1: #eaeaea;
+$w2: #dedede;
+$pfeilC: #12a2d4;
+
 .amh-readmore-wrap {
   margin-bottom: 20px;
 
   .amh-readmore-item-head {
     padding: 10px;
-    background-color: rgba(128, 128, 128, 0.555);
+    background-color: $w1;
   }
   .amh-readmore-items {
     position: relative;
@@ -14,9 +18,12 @@
     @media (max-width: 990px) {
       flex-wrap: wrap;
     }
-
+    .amh-readmore-item:last-child {
+      border-right: 3px solid $w2;
+    }
     .amh-readmore-item {
-      background-color: rgba(128, 128, 128, 0.295);
+      border-right: 3px solid $w1;
+      background-color: $w2;
       * {
         pointer-events: none;
       }
@@ -41,7 +48,7 @@
         }
         h5:nth-child(1) {
           width: 100px;
-          text-align: center;
+          text-align: left;
         }
         h5:nth-child(2) {
           width: 100%;
@@ -65,9 +72,10 @@
 
         svg {
           border-radius: 50%;
-          border: black solid 1px;
+          border: $pfeilC solid 3px;
           height: 40px;
           width: 40px;
+          fill: $pfeilC;
         }
         transition: transform 0.25s;
       }
@@ -76,7 +84,7 @@
         .amh-readmore-item-arrow {
           transform: rotate(90deg);
           svg {
-            background-color: rgb(37, 37, 37);
+            background-color: $pfeilC;
             fill: white;
           }
         }
@@ -114,4 +122,23 @@
       }
     }
   }
+}
+
+.amh-readmore-ampel-wrap {
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.amh-readmore-ampel-item {
+  width: 15px;
+  height: 15px;
+  border: $w2 solid 3px;
+  border-radius: 50%;
+  background-color: white;
+}
+.amh-readmore-ampel-item-active {
+  background-color: red;
 }
