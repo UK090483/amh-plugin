@@ -7,7 +7,6 @@ export default function save(props) {
 
 	function getItems() {
 		return encodedSubblocks.map((item, index) => {
-			console.log(item.ampel);
 			if (item.ampel) {
 				return (
 					<div className="amh-readmore-item" data-id={Id + index}>
@@ -73,20 +72,11 @@ export default function save(props) {
 	);
 }
 function Ampel({ ampel }) {
-	function getClassname(n) {
-		if (n === ampel) {
-			return "amh-readmore-ampel-item amh-readmore-ampel-item-active";
-		} else {
-			return "amh-readmore-ampel-item";
-		}
-	}
 	return (
 		<div className={"amh-readmore-ampel-wrap"}>
-			<div className={getClassname(1)}></div>
-			<div className={getClassname(2)}></div>
-			<div className={getClassname(3)}></div>
-			<div className={getClassname(4)}></div>
-			<div className={getClassname(5)}></div>
+			<div
+				className={`amh-readmore-ampel-item amh-readmore-ampel-item-active-${ampel}`}
+			></div>
 		</div>
 	);
 }

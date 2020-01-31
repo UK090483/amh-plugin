@@ -8,6 +8,12 @@ $pfeilC: #12a2d4;
   .amh-readmore-item-head {
     padding: 10px;
     background-color: $w1;
+    p {
+      font-weight: normal;
+      strong {
+        font-weight: bolder;
+      }
+    }
   }
   .amh-readmore-items {
     position: relative;
@@ -32,7 +38,7 @@ $pfeilC: #12a2d4;
       }
       padding: 0 10px;
       width: 100%;
-      min-height: 50px;
+      min-height: 60px;
 
       display: flex;
       justify-content: space-between;
@@ -76,6 +82,7 @@ $pfeilC: #12a2d4;
           height: 40px;
           width: 40px;
           fill: $pfeilC;
+          background-color: white;
         }
         transition: transform 0.25s;
       }
@@ -116,9 +123,14 @@ $pfeilC: #12a2d4;
       max-height: fit-content;
       * {
         font-size: 1rem;
-        line-height: inherit;
+        line-height: 26px;
+        letter-spacing: 0.4px;
+        font-weight: bold;
         opacity: inherit;
         transition: all 0.25s ease;
+      }
+      strong {
+        font-weight: bolder;
       }
     }
   }
@@ -129,16 +141,34 @@ $pfeilC: #12a2d4;
   height: 50px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 .amh-readmore-ampel-item {
-  width: 15px;
-  height: 15px;
-  border: $w2 solid 3px;
+  margin: 1px;
+  width: 20px;
+  height: 20px;
+  border: #6f6f6f solid 1px;
   border-radius: 50%;
   background-color: white;
-}
-.amh-readmore-ampel-item-active {
-  background-color: red;
+
+  &.amh-readmore-ampel-item-active-1 {
+    background-color: #00b41a;
+  }
+
+  &.amh-readmore-ampel-item-active-2 {
+    background-color: #a2d19a;
+  }
+
+  &.amh-readmore-ampel-item-active-3 {
+    background-color: #6f6f6f;
+  }
+
+  &.amh-readmore-ampel-item-active-4 {
+    background-color: #e9c86c;
+  }
+
+  &.amh-readmore-ampel-item-active-5 {
+    background-color: #da3227;
+  }
 }

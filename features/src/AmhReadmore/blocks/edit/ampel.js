@@ -9,9 +9,9 @@ export default function ampel({ setSubContent, ampel }) {
 
 	function getClassname(n) {
 		if (n === ampel) {
-			return "amh-readmore-ampel-item amh-readmore-ampel-item-active";
+			return `amh-readmore-ampel-item amh-readmore-ampel-item-active-${n} amh-readmore-ampel-item-gewählt`;
 		} else {
-			return "amh-readmore-ampel-item";
+			return `amh-readmore-ampel-item amh-readmore-ampel-item-active-${n}`;
 		}
 	}
 	return (

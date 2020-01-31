@@ -60,6 +60,10 @@
   .amh-readmore-wrap .amh-readmore-item-head {
     padding: 10px;
     background-color: #eaeaea; }
+    .amh-readmore-wrap .amh-readmore-item-head p {
+      font-weight: normal; }
+      .amh-readmore-wrap .amh-readmore-item-head p strong {
+        font-weight: bolder; }
   .amh-readmore-wrap .amh-readmore-items {
     position: relative;
     display: -ms-flexbox;
@@ -81,7 +85,7 @@
       background-color: #dedede;
       padding: 0 10px;
       width: 100%;
-      min-height: 50px;
+      min-height: 60px;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: justify;
@@ -133,7 +137,8 @@
           border: #12a2d4 solid 3px;
           height: 40px;
           width: 40px;
-          fill: #12a2d4; }
+          fill: #12a2d4;
+          background-color: white; }
       .amh-readmore-wrap .amh-readmore-items .amh-readmore-item.amh-readmore-item-active .amh-readmore-item-arrow {
         -webkit-transform: rotate(90deg);
             -ms-transform: rotate(90deg);
@@ -169,11 +174,15 @@
     max-height: fit-content; }
     .amh-readmore-items-subContent .amh-readmore-subContent.amh-readmore-subContent-active * {
       font-size: 1rem;
-      line-height: inherit;
+      line-height: 26px;
+      letter-spacing: 0.4px;
+      font-weight: bold;
       opacity: inherit;
       -webkit-transition: all 0.25s ease;
       -o-transition: all 0.25s ease;
       transition: all 0.25s ease; }
+    .amh-readmore-items-subContent .amh-readmore-subContent.amh-readmore-subContent-active strong {
+      font-weight: bolder; }
 
 .amh-readmore-ampel-wrap {
   width: 100px;
@@ -181,20 +190,28 @@
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly;
+  -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
 
 .amh-readmore-ampel-item {
-  width: 15px;
-  height: 15px;
-  border: #dedede solid 3px;
+  margin: 1px;
+  width: 20px;
+  height: 20px;
+  border: #6f6f6f solid 1px;
   border-radius: 50%;
   background-color: white; }
-
-.amh-readmore-ampel-item-active {
-  background-color: red; }
+  .amh-readmore-ampel-item.amh-readmore-ampel-item-active-1 {
+    background-color: #00b41a; }
+  .amh-readmore-ampel-item.amh-readmore-ampel-item-active-2 {
+    background-color: #a2d19a; }
+  .amh-readmore-ampel-item.amh-readmore-ampel-item-active-3 {
+    background-color: #6f6f6f; }
+  .amh-readmore-ampel-item.amh-readmore-ampel-item-active-4 {
+    background-color: #e9c86c; }
+  .amh-readmore-ampel-item.amh-readmore-ampel-item-active-5 {
+    background-color: #da3227; }
 /**
  * #.# Common SCSS
  *
