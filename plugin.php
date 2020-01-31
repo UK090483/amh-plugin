@@ -48,4 +48,4 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 );
 
 
-// $myUpdateChecker->getVcsApi()->enableReleaseAssets();
+$myUpdateChecker->getVcsApi()->enableReleaseAssets();
