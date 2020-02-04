@@ -6,7 +6,7 @@
  * Description: 
  * Author: Konrad Ullrich
  * Author URI: https://alle-müssen-handeln.de/
- * Version: 1.0.3
+ * Version: 1.0.4
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  * @package CGB
