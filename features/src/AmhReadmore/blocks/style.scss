@@ -157,7 +157,8 @@ $pfeilC: #12a2d4;
   }
 
   &.amh-readmore-ampel-item-active-2 {
-    background-color: #a2d19a;
+    background: #cbf396;
+    background: linear-gradient(90deg, #00b41a 20%, #cbf396 70%);
   }
 
   &.amh-readmore-ampel-item-active-3 {
@@ -165,7 +166,8 @@ $pfeilC: #12a2d4;
   }
 
   &.amh-readmore-ampel-item-active-4 {
-    background-color: #e9c86c;
+    background: rgb(251, 220, 133);
+    background: linear-gradient(90deg, rgba(251, 220, 133, 1) 30%, rgba(218, 50, 39, 1) 80%);
   }
 
   &.amh-readmore-ampel-item-active-5 {
